@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-email</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!--the navbar and everything inside the navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="#">Email</a>
+          <form class="d-flex ">
+            <input class="form-control me-2 d-none d-sm-block 5 ms-lg-5" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary " type="submit">Search</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--dropdown hamburger's buttons-->
+          <div class="collapse navbar-collapse m-3 " id="navbarTogglerDemo02">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none d-grid col-3 mx-auto ">  
+                <button class="btn btn-outline-secondary m-1">Primary</button>
+                <button class="btn btn-outline-secondary m-1">Important</button>
+                <button class="btn btn-outline-secondary m-1">Sent</button>
+                <button class="btn btn-outline-secondary m-1">Drafts</button>
+                <button class="btn btn-outline-secondary m-1">Trash</button>
+            </div>
+          </div>
+        </div>
+    </nav>
+      
+
+<!--col-1 for lg screen buttons-->
+    <div class="row ms-1">
+        <div class="col-lg-3 min-vh-75 p-0 d-none d-lg-block d-xl-block bg-light opacity-100">
+
+            <div class="mt-5 min-vh-100 d-flex flex-column justify-content-start align-items-center gap-4 ">
+                <button class="btn btn-outline-secondary w-50 m-1 ">All Inboxes</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Important</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Primary</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Drafts</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Sent</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Trash</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Scheduled</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Snoozed</button>
+                <button class="btn btn-outline-secondary w-50 m-1">Social</button>
+
+            </div>
+
+            </div>
+          <!--col-2 where all the emails are-->
+            <div class="min-vh-100 p-0 col-md-5 d-block col-lg-4 rounded-3 " style="background-color: rgb(194, 194, 194);">
+
+            <div class="m-3" >
+
+                <!--col-2 compose button that display only on small screen-->
+                <div class="m-3 d-flex justify-content-center d-md-none d-lg-none d-xl-none">
+                    <button class="btn btn-outline-light w-50 m-1 rounded-5 ">Compose</button>
+                </div>
+
+                <!--code for all the email used in col-2-->
+                <div class="row row-cols-1 min-vh-100 d-grid gap-3 text-white opacity-100">
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2">
+                        Clockify <br> Tried extra features? <br> Clockify is more than just a time tracker. Our additional features, help you better manage projects and teammates.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2">
+                        Alexander Lucas (Classroom) <br> NEW MATERIAL <br> Academind Bootstrap 4 Tutorials - Introduction to Bootstrap and Bootstrap Grid.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2 ">
+                        Canva <br> Unlock the top 3 premium Canva features.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2 ">
+                        NetworkChuck <br> Exciting News: Prepare for an upgraded learning experience.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2">
+                        Discord <br> Welcome to Discord, ADiL <br> You’ve just entered the upper atmosphere of Discord, a wild and wonderful world filled with comfortable places for..........
+                    </div>
+                    </div>
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2">
+                        Alexander Lucas (Classroom) <br> New announcement: The recording of the hybrid class we had on Wednesday has been posted into Week 3 Class 2 recordings. 
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2 ">
+                        LinkedIn Job Alerts <br> “software engineer“: 30+ opportunities.....
+                    </div>
+                  </div>
+                  <div class="col ">
+                    <div class="bg-light rounded-3 h-100 text-dark p-2 ">
+                        Alexander Lucas (Classroom) <br> New material: "Reviewing Git and Github.com…"
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+        <!--col-3 read emails div-->
+          <div class="min-vh-100 p-0 col-md-7 col-lg-5 d-none d-md-block d-lg-block">
+
+            <div class="bg-light h-50 w-80 m-4 mb-0 rounded-5 ">
+                <div class="row h-75 d-inline-block ">
+                  <div class="col-11 m-4 fs-5" >Email that is currently opened<br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, impedit nam facere repellendus dignissimos illo fugiat recusandae rerum eveniet porro voluptatibus odio totam dolorum sint magnam quam laboriosam itaque ad.</div>
+            </div>
+            
+            <!--col-3 reply div-->
+            <div class="bg-dark opacity-50  w-80 m-4 mb-0 rounded-5" style="height: 350px;">
+                <div class="row h-75 d-inline-block overflow-auto ">
+                  <div class="col-11 fs-5 m-3 text-white " >Reply <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente a voluptatum ratione in optio expedita rem obcaecati iure labore voluptas modi amet, asperiores deleniti autem? Reprehenderit amet dolore repellendus accusantium accusamus quibusdam inventore cum ut fuga quasi consectetur, rem delectus esse distinctio asperiores, adipisci consequatur quisquam nemo officiis molestias obcaecati similique dolor velit. Quos deserunt rerum nam,</div>
+            </div>
+
+            <!--the sent button on col-3-->
+            <div class="d-flex justify-content-end m-3 w-100 ">
+                <button type="button" class="btn btn-secondary w-25 fs-5 rounded-5">Sent</button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+ 
+     
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
