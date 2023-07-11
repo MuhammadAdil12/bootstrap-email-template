@@ -1,0 +1,28 @@
+.remove-scrollbar::-webkit-scrollbar {
+    display:none;
+}
+
+.remove-scrollbar{
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
+}
+
+.email-text-column{
+    background-color: rgb(235, 235, 235);
+}
+
+.email-text-column:hover{
+    background-color: rgb(248,249,250);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@media (min-width: 750px){
+    .center-search-bar{
+    width: 500px;
+}
+}
+
+.logo-image{
+    border-radius: 50%;
+    width:50px;
+}
