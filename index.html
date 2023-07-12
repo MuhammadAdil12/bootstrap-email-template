@@ -9,33 +9,91 @@
 </head>
 <body>
     <!--the navbar and everything inside the navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-contaner">
         <div class="container-fluid">
-          <img src="logo-01.jpg" class="logo-image navbar-brand ms-5">
-          <form class="d-flex center-search-bar">
+
+          <div class="d-lg-none d-xl-none">
+                <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  A
+                </a>
+                
+
+                <!--the account section-->
+                <div class="offcanvas offcanvas-start" style="width: 300px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Adil Potter </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="d-flex flex-column justify-content-between" style="height: 350px;">
+                      <button class="btn btn-outline-secondary">Account</button>
+                      <button class="btn btn-outline-secondary">Personal details</button>
+                      <button class="btn btn-outline-secondary">Password and security</button>
+                      <button class="btn btn-outline-secondary">Setting</button>
+                      <button class="btn btn-outline-secondary">Help</button>
+                      <button class="btn btn-outline-secondary">Sign-out</button>
+                      
+                    </div>
+                    <div class="dropdown mt-3">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Manage accounts
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Account-1</a></li>
+                        <li><a class="dropdown-item" href="#">Account-2</a></li>
+                        <li><a class="dropdown-item" href="#">Account-3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+
+
+
+          <!--logo section-->
+
+          <img src="logo-01.jpg" class="logo-image navbar-brand ms-4">
+          <form class="d-flex center-search-bar me-auto ms-auto">
             <input class="form-control me-2 d-none d-sm-block 5 ms-lg-5" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-secondary" type="submit">Search</button>
           </form>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          
 
           <!--dropdown hamburger's buttons-->
-          <div class="collapse navbar-collapse m-3" id="navbarTogglerDemo02">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none d-grid col-3 mx-auto ">  
-                <button class="btn btn-outline-secondary m-1">Primary</button>
-                <button class="btn btn-outline-secondary m-1">Important</button>
-                <button class="btn btn-outline-secondary m-1">Sent</button>
-                <button class="btn btn-outline-secondary m-1">Drafts</button>
-                <button class="btn btn-outline-secondary m-1">Trash</button>
-            </div>
-          </div>
+          <div class="d-lg-none d-xl-none">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                  <div class="offcanvas offcanvas-top" style="height: 350px;" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasTopLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column justify-content-evenly align-items-center">
+                      <button class="btn btn-outline-secondary m-1 rounded-5 w-25">Primary</button>
+                      <button class="btn btn-outline-secondary m-1 rounded-5 w-25">Important</button>
+                      <button class="btn btn-outline-secondary m-1 rounded-5 w-25">Sent</button>
+                      <button class="btn btn-outline-secondary m-1 rounded-5 w-25">Drafts</button>
+                      <button class="btn btn-outline-secondary m-1 rounded-5 w-25">Trash</button>
+                    </div>
+                  </div>
+          </div>        
+
+
+
+
+
+
+
+
         </div>
     </nav>
       
 
 <!--col-1 for lg screen-->
-    <div class="row ms-1 h-100 overflow-hidden">
+    <div class="row h-100 overflow-hidden">
         <div class="col-lg-3 p-0 d-none d-lg-block d-xl-block bg-light opacity-100">
 
             <div class="mt-5 d-flex flex-column justify-content-start align-items-center gap-4 ">
@@ -59,8 +117,34 @@
 
                 <!--col-2 compose button that display only on small screen-->
                 <div class="m-3 d-flex justify-content-center d-md-none d-lg-none d-xl-none">
-                    <button class="btn btn-outline-light w-50 m-1 rounded-5 ">Compose</button>
+
+                      <button class="btn btn-outline-light w-50 m-1 rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Compose</button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Compose your Email</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+
+                          <!--offcanvas area code for went you click on compose for small screen-->
+                          <div class="offcanvas-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" required id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Send your message</label>
+                              <textarea class="form-control sent-massage" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                              <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-outline-secondary m-1 rounded-5 fs-5 w-50 d-flex justify-content-center">Send</button>
+                              </div>
+                          </div>
+                        </div>
                 </div>
+              
+
+
+
 
                 <!--code for all the email used in col-2-->
                 <div class="row row-cols-1 h-100-grid gap-3 text-white opacity-100 overflow-hidden">
