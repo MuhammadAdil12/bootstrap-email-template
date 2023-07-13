@@ -62,13 +62,15 @@
             <input class="form-control me-2 d-none d-sm-block 5 ms-lg-5" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-secondary d-none d-sm-block 5 ms-lg-5 w-50 rounded-5" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
 
-            <button class="btn btn-outline-secondary me-auto ms--5 d-block d-sm-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Search</button>
+            <button class="btn btn-outline-secondary me-auto ms--5 d-block d-sm-none d-md-none d-lg-none d-xl-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Search</button>
 
                 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                   <div class="offcanvas-header">
 
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>  <div class="w-100">
+                  </div>  
+                  
+                  <div class="w-100 d-block d-sm-none d-md-none d-lg-none d-xl-none ">
                     <nav class="navbar navbar-light bg-light">
                       <div class="container-fluid">
                         <form class="d-flex">
@@ -169,7 +171,7 @@
 
                 <!--code for all the email used in col-2-->
                 <div class="row row-cols-1 h-100-grid gap-3 text-white opacity-100 overflow-hidden">
-                  <div class="col ">
+                  <div class="col mt-3 ">
                     <div class="rounded-3 h-100 text-dark p-2 email-text-column">
                         Clockify <br> Tried extra features? <br> Clockify is more than just a time tracker. Our additional features, help you better manage projects and teammates.
                     </div>
