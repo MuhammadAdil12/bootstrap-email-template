@@ -23,13 +23,13 @@
                
 
                 <!--the account section-->
-                <div class="offcanvas offcanvas-start" style="width: 300px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Adil Potter </h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
-                    <div class="d-flex flex-column justify-content-between" style="height: 350px;">
+                    <div class="d-flex flex-column justify-content-between" id="account-section-area">
                       <button class="btn btn-outline-secondary"><i class="fa-solid fa-user"></i> Account</button>
                       <button class="btn btn-outline-secondary"><i class="fa-solid fa-person"></i> Personal details</button>
                       <button class="btn btn-outline-secondary"><i class="fa-solid fa-lock"></i> Password and security</button>
@@ -55,13 +55,39 @@
 
 
 
-          <!--logo section-->
+          <!--logo section and search-bar -->
 
           <img src="logo-01.jpg" class="logo-image navbar-brand ms-4">
           <form class="d-flex center-search-bar me-auto ms-auto">
             <input class="form-control me-2 d-none d-sm-block 5 ms-lg-5" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">Search</button>
+            <button class="btn btn-outline-secondary d-none d-sm-block 5 ms-lg-5 w-50 rounded-5" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+
+            <button class="btn btn-outline-secondary me-auto ms--5 d-block d-sm-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Search</button>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                  <div class="offcanvas-header">
+
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>  <div class="w-100">
+                    <nav class="navbar navbar-light bg-light">
+                      <div class="container-fluid">
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-secondary m-2 ms-auto me-auto w-25 rounded-5" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                        </form>
+                      </div>
+                    </nav>
+                  </div>                
+                </div>
+                
           </form>
+
+              
+
+
+
+
+
           
 
           <!--dropdown hamburger's buttons-->
@@ -70,7 +96,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-              <div class="offcanvas offcanvas-start" style="width: 300px;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header">
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -106,9 +132,9 @@
             </div>
           <!--col-2 where all the emails are-->
           
-            <div class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar"style="background-color: rgb(194, 194, 194);">
+            <div class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar" id="col-2-email-section">
             
-              <div class="m-3 remove-scrollbar" >
+              <div class="m-3 mt-0 remove-scrollbar" >
 
                 <!--col-2 compose button that display only on small screen-->
                 <div class="m-3 d-flex justify-content-center d-md-none d-lg-none d-xl-none">
@@ -191,18 +217,18 @@
         <!--col-3 read emails div-->
         <div class="h-100 p-0 col-md-7 col-lg-5 d-none d-md-block d-lg-block">
 
-            <div class="bg-light w-80 m-4 mb-0 rounded-5" style="height: 380px;">
+            <div class="bg-light w-80 m-4 mb-0 rounded-5" id="col-3-opened-email-div">
                 <div class="row h-75 d-inline-block ">
                   <div class="col-11 m-4 fs-5" >Email that is currently opened<br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, impedit nam facere repellendus dignissimos illo fugiat recusandae rerum eveniet porro voluptatibus odio totam dolorum sint magnam quam laboriosam itaque ad.</div>
                 </div>
             
                 <!--col-3 reply div-->
-                <div class="bg-dark opacity-50 m-4 rounded-5" style="height: 300px;">
+                <div class="bg-dark opacity-50 m-4 rounded-5" id="col-3-reply-email-div">
 
                     
                         <div class="col-11 fs-5 mb-4 ms-4 text-white" > <br>  Reply <br> </div>
                         <div class="form-floating d-flex justify-content-center text-dark">
-                          <textarea class="form-control w-75 fs-5" style="height: 170px;" placeholder="Leave a comment here"></textarea>
+                          <textarea class="form-control w-75 fs-5" id="replay-textarea" placeholder="Leave a comment here"></textarea>
                         </div>
 
                     

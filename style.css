@@ -5,7 +5,7 @@
 }
 
 .remove-scrollbar{
-    max-height: calc(100vh - 68px);
+    max-height: calc(100vh - 60px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -33,4 +33,34 @@
 /*nav-bar*/
 .nav-contaner{
     width: calc(100% + 10px);
+}
+
+/*user offcanvas account section*/
+#offcanvasExample{
+   width: 300px;
+}
+
+#account-section-area{
+    height: 350px;
+}
+
+#offcanvasScrolling{
+    width: 300px
+}
+
+#col-2-email-section{
+    background-color: rgb(194, 194, 194);
+}
+
+
+#col-3-opened-email-div{
+    height: 380px;
+}
+
+#col-3-reply-email-div{
+   height: 300px;
+}
+
+#replay-textarea{
+    height: 170px;
 }
