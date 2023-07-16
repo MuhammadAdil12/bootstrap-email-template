@@ -5,7 +5,7 @@
 }
 
 .remove-scrollbar{
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - 50px);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -63,4 +63,12 @@
 
 #replay-textarea{
     height: 170px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.user-logo{
+    font-size: 22px;
 }
